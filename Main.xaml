@@ -1,0 +1,189 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="582,2035" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="54">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Extraer los datos" sap:VirtualizedContainerService.HintSize="592,1970" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Edge: Nueva pestaña" sap:VirtualizedContainerService.HintSize="530,1848" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6f4f9423-4857-4f3f-a370-a718b339de3a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Nos dirigimos al sitio web" sap:VirtualizedContainerService.HintSize="496,1617" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://es.wikipedia.org/wiki/Estado_de_los_Estados_Unidos" Version="V3" />
+            <uix:NClick ClickType="Double" DisplayName="Nos ubicamos en la información" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="6f4f9423-4857-4f3f-a370-a718b339de3a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://es.wikipedia.org/wiki/Estado_de_los_Estados_Unidos" DesignTimeRectangle="209, 225, 1124, 28" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Lista de estados[editar]'" FullSelectorArgument="&lt;webctrl idx='2' parentid='mw-content-text' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='mw-content-text' tag='H2' class='' aaname='' check:innerText='Lista de estados[editar]' /&gt;" Guid="ec0b699f-e8d5-45f3-9ef2-6820913fc3bf" ImageBase64="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" InformativeScreenshot="08c6ffb48d42c7074781feb175ef541b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Estado de los Estados Unidos - Wikipedia, la enciclopedia libre' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extraer datos de tabla" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Estado' ReferenceName='Estado' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Estado Url' ReferenceName='Estado Url' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Nombre oficial2​' ReferenceName='Nombre oficial2​' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Superficie (km²)3​' ReferenceName='Superficie (km²)3​' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Abrev.' ReferenceName='Abrev.' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ingreso en la Unión' ReferenceName='Ingreso en la Unión' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ingreso en la Unión Url' ReferenceName='Ingreso en la Unión Url' ReferenceIdx='6'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Población (2020)4​' ReferenceName='Población (2020)4​' ReferenceIdx='7'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Densidad de población (hab/km²)' ReferenceName='Densidad de población (hab/km²)' ReferenceIdx='8'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Capital' ReferenceName='Capital' ReferenceIdx='9'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Capital Url' ReferenceName='Capital Url' ReferenceIdx='10'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ciudad con mayor población (2006)5​' ReferenceName='Ciudad con mayor población (2006)5​' ReferenceIdx='11'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ciudad con mayor población (2006)5​ Url' ReferenceName='Ciudad con mayor población (2006)5​ Url' ReferenceIdx='12'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Bandera' ReferenceName='Bandera' ReferenceIdx='13'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Bandera Src' ReferenceName='Bandera Src' ReferenceIdx='14'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Bandera Alt Text' ReferenceName='Bandera Alt Text' ReferenceIdx='15'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Bandera Url' ReferenceName='Bandera Url' ReferenceIdx='16'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Estado' attr='text' name2='Estado Url' attr2='href' /&gt;&lt;column name='Nombre oficial2​' attr='text' /&gt;&lt;column name='Superficie (km²)3​' attr='text' /&gt;&lt;column name='Abrev.' attr='text' /&gt;&lt;column name='Ingreso en la Unión' attr='text' name2='Ingreso en la Unión Url' attr2='href' /&gt;&lt;column name='Población (2020)4​' attr='text' /&gt;&lt;column name='Densidad de población (hab/km²)' attr='text' /&gt;&lt;column name='Capital' attr='text' name2='Capital Url' attr2='href' /&gt;&lt;column name='Ciudad con mayor población (2006)5​' attr='text' name2='Ciudad con mayor población (2006)5​ Url' attr2='href' /&gt;&lt;column name='Bandera' attr='text' name2='Bandera Src' attr2='src' name3='Bandera Alt Text' attr3='alt' name4='Bandera Url' attr4='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="6f4f9423-4857-4f3f-a370-a718b339de3a" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="209, 239, 1124, 3069" DesignTimeScaleFactor="1" FriendlyName="'Los 50'" FullSelectorArgument="&lt;webctrl aaname='Los 50 estados de los Estados Unidos ' tag='TABLE' /&gt;" Guid="e1220a66-83ae-4658-a4c2-7a2ae59ed02a" InformativeScreenshot="3d13278f6a1e222ab10e2c18dbea6ca6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Estado de los Estados Unidos - Wikipedia, la enciclopedia libre' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Pasar los datos al excel" sap:VirtualizedContainerService.HintSize="434,125" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="hoja1" WorkbookPath="Extraer_DatosExcel\datos.xlsx" />
+            <ui:FilterDataTable OutputDataTable="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" SelectColumnsMode="Keep">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">["Dakota del Sur"]</InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Para cada fila de la tabla de datos" sap:VirtualizedContainerService.HintSize="434,577" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="400,452" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="datouno" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="0" DisplayName="Obtener elemento de fila" sap:VirtualizedContainerService.HintSize="338,196" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[CurrentRow]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[datouno]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="338,94" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[datouno]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" IconBase64="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" InformativeScreenshot="7a55e96f147360a1071a3785b94e6388.png" Selector="&lt;html app='msedge.exe' title='Nueva pestaña' /&gt;" Url="edge://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
